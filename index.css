@@ -1,0 +1,257 @@
+/*********************** Layout *****************************/
+body {
+    margin: 0;
+    font-family: 'Smythe', cursive;
+} 
+#container{
+position: relative;
+margin: 0 auto;
+width: 600px;
+height: 1161px;
+background:  #F5F5F5;
+}
+
+.flex{
+ width: 540px;
+height:140px; 
+display:flex;
+border-bottom: 1px solid #D2D2D2;
+margin-bottom: 45px;
+}
+
+header{
+    background-image: url('https://images.unsplash.com/photo-1618219877704-18411f61719d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80');
+    background-size: cover;
+    max-width: 600px;
+    height: 167px;
+    margin-bottom: 67px;
+    color: white;
+    padding: 1px;
+}
+/**************** Typography******************* */
+h1{
+    margin-top: 56px;
+    margin-left: 46px;
+    font-size: 39px;
+    line-height: 24px;
+}
+
+h1+p{
+margin-left: 46px;
+font-size: 22px;
+line-height: 14px;
+}
+
+h2  {
+margin-top: 0px;
+margin-bottom: 9px;
+font-size: 28px;
+line-height: 17px;
+}
+h2+p{
+line-height: 24px;
+color: #8B8B8B;
+}
+.price{
+margin-top: 8px;
+font-size: 20px;
+line-height: 24px;
+}
+form h2{
+color: #000000;
+font-size: 24px;
+font-weight: 700;
+line-height: 31.12px;
+font-family: Verdana;
+margin-top: 47.3px;
+margin-bottom: 46.07px;
+margin-left: 108.7px;
+margin-right: 110.93px;
+}
+
+
+/* Buttons */
+.remove-btn{
+    font-size: 12px;
+    color: green;
+    background: none;
+    border: none;
+}
+.total{
+    
+    
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+    border-top: 2px solid #393333;
+}
+.balance{
+    margin-bottom: 53px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+input{
+    box-sizing: border-box;
+    padding-left: 26px;
+    padding-top: 16px;
+    padding-bottom: 14px;;
+    border: 1.29664px solid #757575;
+    border-radius: 3.88991px;
+    font-family: 'Verdana';
+    font-size: 20px;
+    display: flex;
+    width: 475.91px;
+    height: 71.3px;
+    margin-bottom: 23.22px;
+    margin-left: 23.22px;
+    margin-right: 24.87px;
+    
+}
+
+
+#pay-btn{
+
+    margin-top: 10px;
+    background: green;
+    border-radius: 5px;
+    width: 475.91px;
+    height: 71.3px;
+    background: #16DB99;
+    color: white;
+    font-size: 20px;
+    line-height: 31px;
+    color: #FFFFFF;
+}
+#modal{
+
+
+    position: absolute;
+    width: 524px;
+    height: 542.24px;
+    left: 38px;
+    top: 292px;
+   
+    filter: drop-shadow(5.18654px 5.18654px 255.437px rgba(0, 0, 0, 0.5));
+    display: none;
+    text-align: center; 
+    background: #FFFFFF;
+    border-radius: 3.88991px;   
+}
+.Thanks-Message{
+    box-sizing: border-box;
+    position:absolute;
+ 
+    width: 504px;
+    height: 120px;
+    
+    border-radius: 3px;
+    top: 789px;
+    left: 50px;
+    align-content: center;
+    padding-left: 59px;
+    
+  
+    padding-right: 66px;
+    background: #ECFDF5;
+    color: #065F46;
+    font-size:32px;
+    line-height:16.8px;
+}
+.Thanks-Message h2{
+    margin-top: 55px;
+}
+
+.order{
+    display: flex;
+    
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#order-summary h2{
+    
+    font-size: 28px;
+    /* color: green; */
+    text-align: center;
+}
+
+#finish{
+    width: 100%;
+    color: white;
+    background: #16DB99;
+    max-width: 508px;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.price{
+    margin: 0px;
+
+}
+.order p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 24px;
+    color: green;
+}
+.class{
+    font-size: 40px;
+}
+.ingredients{
+    margin: 0px;
+    width:340px;
+}
+
+.emoji{
+    max-width: 70px;
+    height: 89px;
+    font-size: 78px;
+    margin-top: 0px;
+    margin-left: 46px;
+    margin-right: 36px
+    }
+    
+
+
+button{
+    border: 1.5px solid #DEDEDE;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    color: #3C3C3C;
+    background: white
+}
+#container{
+    position: relative;
+}                                                                                      
+#summary{
+    display:none;
+    width: 508px;
+    background: #F5F5F5;
+    height: 319px;
+  
+    position: absolute;
+
+    top: 789px;
+    left: 46px;
+}
+@media (min-width: 768px){
+    .Thanks-Message,
+    #modal,
+    #summary{
+left: 230px;
+}
+}
+@media (min-width: 1024px){
+    .Thanks-Message,
+    #modal,
+    #summary{
+ left: 400px;
+    }
+}
